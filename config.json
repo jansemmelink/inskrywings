@@ -1,0 +1,19 @@
+{
+    "server":{
+        "console":{
+            "msisdn":"27821234567"
+        }
+    },
+    "_server":{
+        "rest":{
+        }
+    },
+    "__server":{
+        "nats":{
+            "domain":"sos_credit"
+        }
+    },
+    "sessions":{
+        
+    }
+}

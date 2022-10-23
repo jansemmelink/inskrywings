@@ -1,0 +1,1 @@
+{"keys":{"invalid_date":{"caption":{},"data":{"error":"type(string).example(parsing time \"s\" as \"2006-01-02\": cannot parse \"s\" as \"2006\")","value":"type(string).example(s)"}},"nat_id_not_13_digits":{"caption":{"af":"Die nommer moet 13 syfers wees"},"data":{"value":"type(string).example(444)"}}}}

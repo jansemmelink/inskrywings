@@ -1,0 +1,58 @@
+{
+    "main":{
+        "menu":{
+            "title":{"af":"Inskrywings"},
+            "options":[
+                {"caption":{"af":"Kampe"},"next":["events"]},
+                {"caption":{"af":"Soek"},"next":["events_search"]},
+                {"caption":{"af":"Profiel"},"next":["profile_menu"]}
+            ]
+        }
+    },
+    "profile_show":{
+        "menu":{
+            "title":{"af":"Profiel: {{profile_natid}}"},
+            "options":[
+                {"caption":{"af":"Van    {{profile_surname}}"}, "next":["edit"]},
+                {"caption":{"af":"Naam   {{profile_name}}"}, "next":["edit"]},
+                {"caption":{"af":"Gebore {{profile_dob}}"}, "next":["edit"]},
+                {"caption":{"af":"Geslag {{profile_gender}}"}, "next":["edit"]},
+                {"caption":{"af":"Terug"}, "next":["profile_menu"]}
+            ]
+        }
+    },
+
+    "profile":{
+        "menu":{
+            "title":{"af":"Profiel"},
+            "options":[
+                {"caption":{"af":"Nuwe Profiel"},"next":[
+                    "profile_new_natid",
+                    "fail_if_natid_exists",
+                    "profile_new_surname",
+                    "profile_new_name",
+                    "profile_new_dob",
+                    "profile_new_gender",
+                    "profile_add"
+                ]}
+            ]
+        }
+    },
+    "profile_new_natid":{"prompt":{"caption":{"af":"Wat is jou Suid-Afrikaanse ID nommer?"},"name":"profile_new_natid","type":"national_id"}},
+
+    "profile_new_surname":{"prompt":{"caption":{"af":"Wat is jou van?"},"name":"profile_new_surname"}},
+
+    "profile_new_name":{"prompt":{"caption":{"af":"Wat is jou naam?"},"name":"profile_new_name"}},
+
+    "profile_new_dob":{"prompt":{"caption":{"af":"Wat is jou geboortedatum (bv 1980-07-20) ?"},"name":"profile_new_dob", "type":"date"}},
+
+    "profile_new_gender":{
+        "menu":{
+            "title":{"af":"Wat is jou geslag?"},
+            "options":[
+               {"caption":{"af":"Manlik"},"next":[{"set":{"name":"profile_new_gender","value":"M"}}]},
+               {"caption":{"af":"Vroulik"},"next":[{"set":{"name":"profile_new_gender","value":"F"}}]}
+            ]
+        }
+    }
+}
